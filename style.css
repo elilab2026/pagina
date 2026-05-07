@@ -302,3 +302,30 @@ footer{
     }
 
 }
+
+/* =========================================
+   ESTILOS PARA LAS TARJETAS DE EQUIPO
+   ========================================= */
+
+.equipo-card {
+    display: flex; /* Permite colocar elementos lado a lado */
+    align-items: center; /* Centra el texto y la imagen verticalmente */
+    justify-content: space-between; /* Empuja la foto a la derecha */
+    gap: 20px; /* Crea un espacio entre el texto y la foto */
+    text-align: left; /* Asegura que el texto se lea de izquierda a derecha */
+}
+
+/* El bloque de texto ocupa el espacio que sobra */
+.info-texto {
+    flex-grow: 1; 
+}
+
+/* Estilo para la foto de perfil */
+.foto-perfil {
+    width: 90px; /* Ancho de la foto (puedes achicarlo a 70px si lo ves muy grande) */
+    height: 90px; /* Alto de la foto (debe ser igual al ancho) */
+    border-radius: 50%; /* Hace que la foto sea un círculo perfecto */
+    object-fit: cover; /* Evita que la foto se estire o se deforme */
+    flex-shrink: 0; /* Evita que la foto se aplaste si escribes mucho texto */
+    border: 3px solid #ccc; /* Opcional: un pequeño borde gris alrededor de la foto */
+}
