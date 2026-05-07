@@ -10,46 +10,37 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
 
-        <div class="header-content">
+        <img src="assets/ELI_Square.png"
+             alt="EliLab Logo"
+             class="logo">
 
-            <img src="assets/ELI_Square.png"
-                 alt="EliLab Logo"
-                 class="logo">
+        <h1>EliLab</h1>
 
-            <h1>EliLab</h1>
-
-            <p>
-                Laboratorio de Innovación y Tecnología
-            </p>
-
-        </div>
+        <p>Laboratorio de Innovación, Tecnología e Investigación</p>
 
     </header>
 
+    <!-- NAV -->
     <nav>
-
         <a href="#inicio">Inicio</a>
-        <a href="#sobre">Nosotros</a>
-        <a href="#investigacion">Investigación</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas</a>
         <a href="#contacto">Contacto</a>
-
     </nav>
 
+    <!-- HERO -->
     <section class="hero" id="inicio">
-
-        <div class="hero-overlay"></div>
 
         <div class="hero-content">
 
-            <h2>
-                Ciencia • Tecnología • Futuro
-            </h2>
+            <h2>Innovación con propósito</h2>
 
             <p>
-                Construyendo herramientas e investigación
-                para la próxima generación.
+                Investigación científica, tecnología y desarrollo
+                para soluciones del futuro.
             </p>
 
             <button onclick="mostrarMensaje()">
@@ -60,6 +51,7 @@
 
     </section>
 
+    <!-- SOBRE -->
     <section id="sobre">
 
         <div class="container">
@@ -67,36 +59,37 @@
             <h2>Sobre EliLab</h2>
 
             <p>
-                EliLab desarrolla investigación avanzada,
-                automatización, análisis de datos e innovación
-                tecnológica con enfoque científico.
+                EliLab es un laboratorio dedicado a la investigación,
+                innovación tecnológica y desarrollo de soluciones científicas
+                con enfoque moderno y profesional.
             </p>
 
         </div>
 
     </section>
 
-    <section id="investigacion">
+    <!-- ÁREAS -->
+    <section id="areas">
 
         <div class="container">
 
-            <h2>Áreas</h2>
+            <h2>Áreas de Trabajo</h2>
 
             <div class="cards">
 
                 <div class="card">
                     <h3>Inteligencia Artificial</h3>
-                    <p>Modelos, automatización y sistemas inteligentes.</p>
+                    <p>Modelos y sistemas inteligentes.</p>
                 </div>
 
                 <div class="card">
                     <h3>Data Science</h3>
-                    <p>Análisis y procesamiento avanzado de información.</p>
+                    <p>Análisis avanzado de datos.</p>
                 </div>
 
                 <div class="card">
                     <h3>Innovación</h3>
-                    <p>Creación de soluciones tecnológicas modernas.</p>
+                    <p>Soluciones tecnológicas modernas.</p>
                 </div>
 
             </div>
@@ -105,6 +98,7 @@
 
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto">
 
         <div class="container">
@@ -113,15 +107,13 @@
 
             <form>
 
-                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Nombre" required>
 
-                <input type="email" placeholder="Correo">
+                <input type="email" placeholder="Correo" required>
 
-                <textarea placeholder="Mensaje"></textarea>
+                <textarea placeholder="Mensaje" required></textarea>
 
-                <button type="submit">
-                    Enviar
-                </button>
+                <button type="submit">Enviar</button>
 
             </form>
 
@@ -129,10 +121,9 @@
 
     </section>
 
+    <!-- FOOTER -->
     <footer>
-
-        © 2026 EliLab
-
+        © 2026 EliLab - Todos los derechos reservados
     </footer>
 
     <script src="script.js"></script>
