@@ -360,3 +360,32 @@ footer{
     position: relative;
     z-index: 1; 
 }
+
+/* =========================================
+   ESTILOS PARA LAS TARJETAS DE TRABAJOS
+   ========================================= */
+
+.trabajo-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+
+/* Estilo para las imágenes de los proyectos */
+.foto-proyecto {
+    width: 120px; /* Un poco más grande que la foto de perfil */
+    height: 120px;
+    border-radius: 12px; /* Cuadrado con bordes suaves */
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepara el efecto hover */
+    border: 1px solid #ddd;
+}
+
+/* Efecto visual al pasar el cursor (hover) para indicar que es un enlace */
+.foto-proyecto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una pequeña sombra */
+}
